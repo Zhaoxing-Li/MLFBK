@@ -10,7 +10,7 @@ Knowledge tracing aims to estimate students' knowledge state or skill mastering 
 
 
 ## Model Architecture
-![Architecture](https://github.com/Zhaoxing-Li/MLFBK/blob/main/Architecture.jpg)
+![Architecture](https://github.com/Zhaoxing-Li/MLFBK/blob/main/Architecture.png)
 The preprocessed data contains a list of student interactions.
 In each interaction a student answers a question correctly or incorrectly.
 
