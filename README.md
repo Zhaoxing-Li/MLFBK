@@ -6,7 +6,7 @@ Knowledge tracing aims to estimate students' knowledge state or skill mastering 
 
 ## Setup 
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
 ## Model Architecture
