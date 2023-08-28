@@ -1,5 +1,13 @@
-# Knowledge Tracing Research
-This repository contains all the code for the Knowledge Tracing research project that combines multi features with a BERT architecture.
+# MLFBK
+This repository is for the research Broader and Deeper: A Multi-Features with Latent Relations BERT Knowledge Tracing Model.
+
+## Abstract
+Knowledge tracing aims to estimate students' knowledge state or skill mastering level over time, which is evolving into an essential task in educational technology. Traditional knowledge tracing algorithms generally use one or a few features to predict students' behaviour and do not consider the latent relations between these features, which could be limiting and disregarding important information in the features. In this paper, we propose MLFBK: A Multi-Features with Latent Relations BERT Knowledge Tracing model, which is a novel BERT based Knowledge Tracing approach that utilises multiple features and mines latent relations between features to improve the performance of the Knowledge Tracing model. Specifically, our algorithm leverages four data features student_id, skill\_id, item\_id, and response\_id, as well as three meaningful latent relations among features to improve the performance: individual skill mastery, ability profile of students (learning transfer across skills), and problem difficulty. By incorporating these explicit features, latent relations, and the strength of the BERT model, we achieve higher accuracy and efficiency in knowledge tracing tasks. We use t-SNE as a visualisation tool to analyse different embedding strategies. Moreover, we conduct ablation studies and activation function evaluation to evaluate our model. Experimental results demonstrate that our algorithm outperforms baseline methods and demonstrates good interpretability. 
+
+## Setup 
+
+pip install -r requirements.txt
+
 
 ## Model Architecture
 
@@ -19,15 +27,6 @@ Then using the `IKT_HANDLER` class, the following new features are generated fro
 - `ability_profile` represents the transfer learning across different skills
 - `skill_mastery` represents the current knowledge state of a given student
 
-These new features are generated using `BKT` and clustering. It is the exact same as described in the [IKT paper](https://arxiv.org/pdf/2112.11209.pdf).
-
-Now the data is split into interaction sequences of length 100. <br />
-If a student has less than 100 interactions, the rest is padded with 0's. <br />
-If a student has more that 100 interactions, these are split into multiple sequences.
-
-After the BKT / clustering layer to generate additional features, the new and original features are passed to a BERT layer. <br />
-This layer uses an encoder stack with a `MonotonicConvolutionalMultiheadAttention` attention layer. This is the same as in the original [MonaCoBERT paper](https://arxiv.org/abs/2208.12615).
-This layer learns by masking and guessing 15% of the input, just as the original BERT paper by google.
 
 The BERT layer uses embedding for all features and adds these together:
 - `question embedding` +
@@ -40,13 +39,8 @@ The BERT layer uses embedding for all features and adds these together:
 
 After the encoder stack and embedding, the input is passed to a feed forward layer for prediction.
 
-## Hyperparameters
 
-Here are the hyperparameters that I used to train the current model:
-- `number of epochs` 50
-- `learning rate` 0.001
-- `optimizer` adam
-- `crit` binary cross entropy
-- `number of encoders` 12
-- `hidden size` 512
-- `number of attention heads` 8
+## Errata
+If you have any question or find error in the code, you can send me a mail.
+
+Contact: Zhaoxing Li (zhaoxing.li0808@outlook.com).
