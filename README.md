@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 
 ## Model Architecture
-
+![Architecture](https://github.com/Zhaoxing-Li/MLFBK/blob/main/Architecture.jpg)
 The preprocessed data contains a list of student interactions.
 In each interaction a student answers a question correctly or incorrectly.
 
