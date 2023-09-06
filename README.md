@@ -1,4 +1,4 @@
-# MLFBK
+# MLFBK: A Multi-Features with Latent Relations BERT Knowledge Tracing Model
 This repository is for the research **Broader and Deeper: A Multi-Features with Latent Relations BERT Knowledge Tracing Model.**
 https://link.springer.com/chapter/10.1007/978-3-031-42682-7_13
 
