@@ -4,7 +4,7 @@ https://link.springer.com/chapter/10.1007/978-3-031-42682-7_13
 
 Full paper available at: https://www.researchgate.net/publication/373500913_Broader_and_Deeper_A_Multi-Features_with_Latent_Relations_BERT_Knowledge_Tracing_Model
 
-If you find this code useful in your research, please cite
+If you find this code useful in your research, please cite：
 
 ```
 @inproceedings{li2023broader,
