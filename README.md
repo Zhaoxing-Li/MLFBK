@@ -60,4 +60,4 @@ After the encoder stack and embedding, the input is passed to a feed forward lay
 ## Errata
 If you have any question or find error in the code, you can send me a mail.
 
-Contact: Zhaoxing Li (zhaoxing.li0808@outlook.com).
+Contact: Zhaoxing Li (zhaoxing.li@soton.ac.uk).
